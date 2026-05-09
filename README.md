@@ -1,75 +1,97 @@
-# 🧑‍💻 남궁도현 (Namgung Dhohyeon) | Software Engineer
+# 🧑‍💻 남궁도현 | Namgung Dhohyeon
 
-> **"동작 원리를 파고들어, 탄탄한 기반 위에서 문제를 해결합니다."**
+> **"동작 원리를 파고들어, 탄탄한 기반 위에서 문제를 해결하는 개발자"**
+>
+> 초등학생 시절 ActionScript를 이용해 '마우스 피하기' 등 간단한 플래시 게임을 직접 제작하고 공유하며, 내 코드가 화면에서 작동하는 것을 보는 순수한 즐거움에서 게임 개발자의 꿈을 키웠습니다.
+> 단순히 도구를 사용하는 것을 넘어, 학부 과정 동안 운영체제, 컴파일러, 컴퓨터 구조, 3D 그래픽스 등 시스템의 핵심 요소들을 직접 다뤄보며 컴퓨터 공학의 뼈대를 다졌습니다. 어떠한 기술 스택을 마주하더라도 현상의 본질을 파악하고 최적의 구조를 설계하는 엔지니어가 되겠습니다.
 
-단순히 프레임워크나 API를 사용하는 것을 넘어, 그 이면의 동작 원리를 이해하고 코드를 작성하는 것을 중요하게 생각합니다. 학부 과정 동안 운영체제, 컴파일러, 3D 그래픽스, 데이터 알고리즘 등을 라이브러리에 의존하지 않고 밑바닥부터(From Scratch) 직접 구현하며 컴퓨터 공학의 뼈대를 다졌습니다.
+---
 
-어떤 도메인이나 기술 스택을 마주하더라도 현상의 '본질'을 파악하고 최적의 구조를 설계하는 엔지니어가 되겠습니다.
+## 🙋‍♂️ Profile & Contact
 
-<br>
+- **Name**: 남궁도현
+- **Phone**: 010-9175-9479
+- **Email**: dhohyeon@naver.com
+- **GitHub**: `https://github.com/dhohyeon007`
 
-## 🙋‍♂️ About Me
+---
 
-- 🎓 **한양대학교 컴퓨터소프트웨어학부** (2021.03 ~ 재학 중)
-- 🌱 현재 **Low-level System** 구조와 **렌더링/AI 최적화**에 깊은 관심을 두고 있습니다.
-- 💻 프레임워크의 마법에 기대기보다, 시스템의 동작 원리를 뜯어보고 직접 구현하는 과정을 즐깁니다.
-- 🎮 초등학교 시절 ActionScript로 게임을 만들며 느꼈던 순수한 즐거움을 원동력 삼아 코드를 작성합니다.
+## 🎓 Education
 
-<br>
+- **한양대학교 컴퓨터소프트웨어학부** (4학년 재학 중)
+- **학점 평균**: 3.78 / 4.5
+
+---
 
 ## 🛠 Technical Skills
 
-### Languages
+- **Languages**: C/C++, Python, Java, SQL
+- **Hardware/Architecture**: Verilog
+- **Graphics**: OpenGL
+- **Database**: MySQL
 
-- `C` / `C++` (Fluent)
-- `Python`
-- `SQL`
-- `Verilog`
-
-### Core & Systems
-
-- **OS & Architecture**: `xv6 OS`, `Computer Architecture`
-- **Graphics & AI**: `OpenGL`, `Skeletal Animation (BVH)`, `Machine Learning (From Scratch)`
-- **Tools**: `Git`, `Linux`, `MySQL`
-
-<br>
+---
 
 ## 🚀 Key Projects
 
-### 1. 3D Mesh & 계층적 모션 데이터(BVH) 뷰어
+### 🖥️ 컴퓨터그래픽스
 
-**Forward Kinematics 기반의 계층적 렌더링 파이프라인 구축**
+**3D Mesh 및 계층적 모션 데이터(BVH) 뷰어 구현**
 
-- **Tech Stack**: C++, OpenGL, Python
-- **주요 구현**:
-  - 4개 이상의 정점을 가진 비정형 폴리곤(N-gon) 면 데이터를 GPU 렌더링에 적합하도록 삼각형으로 자동 분할(**Triangulation**)하는 알고리즘 구현.
-  - BVH 파일의 트리 구조를 파싱하고 **Forward Kinematics(순운동학)** 연산을 적용하여 각 뼈대의 전역 변환 행렬을 도출, 프레임별 모션 동기화.
-- **Troubleshooting**: 메쉬 렌더링 시 발생하는 깨짐 문제를 인덱싱 기반의 분할 로직으로 해결하여 출력 안정성 확보.
-- [🔗 Repository Link](레포지토리 주소 입력) | [🎥 Demo Video](유튜브 등 영상 주소 입력)
+- **Tech Stack**: Python, OpenGL
+- **주요 내용**:
+  - 3D 객체의 정점 및 면 데이터를 파싱하여 화면에 렌더링하는 OBJ Viewer 구현.
+  - 뼈대의 계층 구조와 모션 데이터를 읽어와 3D 모델에 적용하여 움직임을 시각화하는 BVH Viewer 구현.
 
-### 2. Decision Tree & Bagging Ensemble from Scratch
+### ⚙️ 운영체제
 
-**외부 라이브러리 없이 구현한 지능적 의사결정 모델**
+**xv6 운영체제 커널 고도화**
+
+- **Tech Stack**: C/C++
+- **주요 내용**:
+  - 기존 xv6 운영체제 코드에 FCFS 및 MLFQ 스케줄러를 직접 구현 및 추가하여 프로세스 스케줄링 이해.
+  - 커널 레벨 스레드 및 Copy-On-Write(COW) 메커니즘을 구현하여 자원 관리 및 메모리 효율성 증대.
+
+### 📝 컴파일러설계
+
+**컴파일러 Front-end 파이프라인 분석 및 문법 적용**
+
+- **Tech Stack**: C/C++
+- **주요 내용**:
+  - 기존 가상의 TINY 언어 컴파일러 코드를 분석하여 AST(추상 구문 트리) 생성 및 컴파일 파이프라인의 작동 원리 이해.
+  - Lexical, Syntax, Semantic Analysis 과정을 C-MINUS 언어의 문법(Grammar) 구조에 맞게 전면 수정 및 확장하여 컴파일러 프론트엔드 체화.
+
+### 🖲️ 컴퓨터구조론
+
+**Pipelined CPU 및 아키텍처 설계**
+
+- **Tech Stack**: C++, Verilog
+- **주요 내용**:
+  - C++ 및 Verilog를 이용하여 Single-cycle 및 Multi-cycle CPU의 작동 원리를 코드로 구현.
+  - Branch Predictor가 포함된 Pipelined CPU를 직접 설계하여 파이프라인 해저드 및 연산 지연 최적화 경험.
+
+### 📊 데이터사이언스
+
+**밑바닥부터 구현한 지능적 데이터 분석 알고리즘**
 
 - **Tech Stack**: Python
-- **주요 구현**:
-  - `scikit-learn` 등 외부 라이브러리 없이 엔트로피 기반의 **정보 획득량(Information Gain)** 수식을 직접 코드로 구현하여 최적의 분기점 탐색 로직 완성.
-  - 단일 트리의 **과적합(Overfitting)** 문제를 방지하기 위해 부트스트랩 샘플링과 다수결(Majority Voting) 방식의 **배깅(Bagging)** 기법 적용.
-- **Insight**: 알고리즘의 귀납적 편향(Inductive Bias) 등 확률 모델의 구조적 특성을 체화.
-- [🔗 Repository Link](레포지토리 주소 입력)
+- **주요 내용**:
+  - 외부 라이브러리에 의존하지 않고 연관 규칙 탐색을 위한 Apriori 알고리즘 구현.
+  - 데이터 분류 및 예측을 위한 의사결정 나무(Decision Tree)를 직접 코드로 구현하여 논리적 알고리즘 설계 역량 확보.
 
-### 3. System Software Suite (OS, Compiler, CPU)
+### 💾 데이터베이스시스템및응용
 
-**하드웨어-소프트웨어 통합 설계 및 시스템 최적화**
+**RDBMS 연동 뱅킹 서비스 개발**
 
-- **xv6 OS 고도화**: 커널 레벨에서 `MLFQ 스케줄러`, `멀티스레드`, `Copy-On-Write(COW)` 기능을 직접 구현하며 자원 관리 메커니즘 체화.
-- **C-Minus 컴파일러 구현**: Lexical/Syntax/Semantic 분석을 거쳐 `AST(Abstract Syntax Tree)`를 생성하는 컴파일러 파이프라인 전 과정 설계.
-- **Pipelined CPU 설계**: Verilog를 활용해 `Branch Predictor`가 탑재된 파이프라인 CPU를 설계하고 연산 지연 최적화.
-- [🔗 Repository Link](관련 레포지토리 주소 묶음 혹은 대표 주소 입력)
+- **Tech Stack**: Python, SQL, MySQL
+- **주요 내용**:
+  - MySQL DBMS를 구축하고 Python과 SQL을 이용해 데이터베이스와 연동되는 간단한 은행 어플리케이션 구현.
+  - 트랜잭션 처리 및 관계형 데이터베이스 구조에 대한 실무적 이해력 배양.
 
-<br>
+---
 
-## 📬 Contact
+## 📚 Core Coursework
 
-- 📧 **Email**: [dhohyeon007@gmail.com](mailto:dhohyeon007@gmail.com)
-- 📝 **Blog**: [기술 블로그 주소](블로그 링크)
+- **시스템 & 아키텍처**: 마이크로프로세서응용, 시스템프로그래밍, 운영체제, 컴퓨터구조론, 컴파일러설계, 디지털논리
+- **소프트웨어 공학 & 네트워크**: 객체지향프로그래밍, 컴퓨터네트워크(TCP 상호운용성 구현), 데이터베이스시스템및응용, 소프트웨어공학, 컴퓨터보안
+- **수학 & AI & 알고리즘**: 자료구조론, 알고리즘, 오토마타, 확률통계론, 인공지능, 기계학습알고리즘, 기계학습이론, 데이터사이언스
